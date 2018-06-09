@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>xcpt Insights</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/index.css" />
+</head>
+
+<body>
+    <div class="main-menu">
+        <span class="title-xcpt">XCPT</span>
+        <span class="title-insights">Insights</span>
+    </div>
+    <div class="main-wrapper">
+        <div class="package-list ui list">
+            <div class="item">
+                <div class="header">Package 1</div>
+                Package Desc
+            </div>
+            <div class="item">
+                <div class="header">Package 2</div>
+                Package Desc
+            </div>
+            <div class="item">
+                <div class="header">Package 3</div>
+                Package Desc
+            </div>
+            <div class="item">
+                <div class="header">Package 4</div>
+                Package Desc
+            </div>
+        </div>
+        <div class="insights">
+            <div class="ui secondary pointing menu">
+                <a class="active item">
+					Exceptions
+				</a>
+                <a class="item">
+					Inbox
+				</a>
+                <a class="item">
+					Analytics
+				</a>
+                <div class="right menu">
+                    <a class="ui item">
+                        <div class="ui transparent icon input">
+                            <input type="text" placeholder="Search">
+                            <i class="search link icon"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="exception-charts">
+                <div id="exception-breakdown" style="width: 600px; height: 400px;"></div>
+            </div>
+            <div class="exceptions-list">
+                <div class="ui styled fluid accordion">
+                    <div class="title">
+                        <i class="plus circle icon"></i> Exception 1
+                    </div>
+                    <div class="content">
+                        <pre class="transition hidden">
+                            Traceback (most recent call last):<br>  File \"/usr/lib64/python2.7/runpy.py\", line 174, in _runmoduleas_main<br>    \"__main__\", fname, loader, pkg_name)<br>  File \"/usr/lib64/python2.7/runpy.py\", line 72, in _run_code<br>    exec code in run_globals<br>  File \"/usr/lib64/python2.7/SimpleHTTPServer.py\", line 235, in module<br>    test()<br>  File \"/usr/lib64/python2.7/SimpleHTTPServer.py\", line 231, in test<br>    BaseHTTPServer.test(HandlerClass, ServerClass)<br>  File \"/usr/lib64/python2.7/BaseHTTPServer.py\", line 606, in test<br>    httpd = ServerClass(server_address, HandlerClass)<br>  File \"/usr/lib64/python2.7/SocketServer.py\", line 417, in__init__<br>    self.server_bind()<br>  File \"/usr/lib64/python2.7/BaseHTTPServer.py\", line 108, in server_bind<br>    SocketServer.TCPServer.server_bind(self)<br>  File \"/usr/lib64/python2.7/SocketServer.py\", line 431, in server_bind<br>    self.socket.bind(self.server_address)<br>  File \"/usr/lib64/python2.7/socket.py\", line 228, in meth<br>    return getattr(self._sock,name)(*args)<br>socket.error: [Errno 98] Address already in use<br>
+                        </pre>
+                    </div>
+                    <div class="title">
+                        <i class="plus circle icon"></i> Exception 2
+                    </div>
+                    <div class="content">
+                        <pre class="transition hidden">
+                            Traceback (most recent call last):<br>  File \"/usr/lib64/python2.7/runpy.py\", line 174, in _runmoduleas_main<br>    \"__main__\", fname, loader, pkg_name)<br>  File \"/usr/lib64/python2.7/runpy.py\", line 72, in _run_code<br>    exec code in run_globals<br>  File \"/usr/lib64/python2.7/SimpleHTTPServer.py\", line 235, in module<br>    test()<br>  File \"/usr/lib64/python2.7/SimpleHTTPServer.py\", line 231, in test<br>    BaseHTTPServer.test(HandlerClass, ServerClass)<br>  File \"/usr/lib64/python2.7/BaseHTTPServer.py\", line 606, in test<br>    httpd = ServerClass(server_address, HandlerClass)<br>  File \"/usr/lib64/python2.7/SocketServer.py\", line 417, in__init__<br>    self.server_bind()<br>  File \"/usr/lib64/python2.7/BaseHTTPServer.py\", line 108, in server_bind<br>    SocketServer.TCPServer.server_bind(self)<br>  File \"/usr/lib64/python2.7/SocketServer.py\", line 431, in server_bind<br>    self.socket.bind(self.server_address)<br>  File \"/usr/lib64/python2.7/socket.py\", line 228, in meth<br>    return getattr(self._sock,name)(*args)<br>socket.error: [Errno 98] Address already in use<br>
+                        </pre>
+                    </div>
+                    <div class="title">
+                        <i class="plus circle icon"></i> Exception 3
+                    </div>
+                    <div class="content">
+                        <pre class="transition hidden">
+                            Traceback (most recent call last):<br>  File \"/usr/lib64/python2.7/runpy.py\", line 174, in _runmoduleas_main<br>    \"__main__\", fname, loader, pkg_name)<br>  File \"/usr/lib64/python2.7/runpy.py\", line 72, in _run_code<br>    exec code in run_globals<br>  File \"/usr/lib64/python2.7/SimpleHTTPServer.py\", line 235, in module<br>    test()<br>  File \"/usr/lib64/python2.7/SimpleHTTPServer.py\", line 231, in test<br>    BaseHTTPServer.test(HandlerClass, ServerClass)<br>  File \"/usr/lib64/python2.7/BaseHTTPServer.py\", line 606, in test<br>    httpd = ServerClass(server_address, HandlerClass)<br>  File \"/usr/lib64/python2.7/SocketServer.py\", line 417, in__init__<br>    self.server_bind()<br>  File \"/usr/lib64/python2.7/BaseHTTPServer.py\", line 108, in server_bind<br>    SocketServer.TCPServer.server_bind(self)<br>  File \"/usr/lib64/python2.7/SocketServer.py\", line 431, in server_bind<br>    self.socket.bind(self.server_address)<br>  File \"/usr/lib64/python2.7/socket.py\", line 228, in meth<br>    return getattr(self._sock,name)(*args)<br>socket.error: [Errno 98] Address already in use<br>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+            ['Exception', 'Frequency'],
+            ['undefined error', 11],
+            ['Hula hula', 64],
+            ['Null Pointer', 13],
+            ['Apple', 5]
+        ]);
+
+        var options = {
+            title: 'Exceptions Breakdown'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('exception-breakdown'));
+
+        chart.draw(data, options);
+    }
+
+    $('.ui.accordion').accordion();
+    </script>
+</body>
+
+</html>
