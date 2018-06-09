@@ -54,10 +54,14 @@ body {
 	height: 60px!important;
 	line-height: 40px!important;
 	border-radius: 0!important;
-	background-color: rgb(0, 0, 255);
+	background-color:rgb(249, 249, 249)
 }
 
 .accordion .content {
 	background-color: #2c3e50;
 	color: #fff;
+}
+
+.ui.styled.accordion .accordion .title, .ui.styled.accordion .title {
+	color: rgb(0, 0, 0) !important;
 }
