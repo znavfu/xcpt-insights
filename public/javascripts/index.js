@@ -4,7 +4,7 @@ var template = function(id) {
 };
 
 var API = {
-    URL: 'http://13.229.97.157:1237/',
+    URL: 'http://localhost:1237/',
     ENDPOINTS: {
         GET_FEEDBACK: 'insights/'
     },
