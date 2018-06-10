@@ -36,6 +36,16 @@ body {
 
 .package-list>.item {
 	padding: 15px 15px!important;
+	cursor: pointer;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.package-list>.item.active {
+	border-left: 3px solid #16a085;
+}
+
+.package-list .item p {
+	color: #999;
 }
 
 .insights {
@@ -64,4 +74,18 @@ body {
 
 .ui.styled.accordion .accordion .title, .ui.styled.accordion .title {
 	color: rgb(0, 0, 0) !important;
+}
+
+.accordion .title .label {
+	float: right;
+}
+
+pre {
+	text-align: left;
+}
+
+.footer {
+	text-align: center;
+	width: 100%;
+	margin: 100px 0;
 }
